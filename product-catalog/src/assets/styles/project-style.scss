@@ -1,0 +1,24 @@
+$primary-color: #A086BA;
+$secondary-color: #BB84BF;
+$background-color: #F0F3F8;
+$gray-color: #B1C4B6;
+$green-text: #69AD3E;
+$white-text: white;
+
+.dialog-title {
+    border-bottom: #e8e8e8 solid 1px;
+    border-radius: 15px;
+    padding: 5px 0 10px 20px;
+    font-size: x-large;
+    color: $primary-color;
+    font-weight: bold;
+}
+
+.dialog-button-style {
+    width: 100px;
+}
+
+.primary-background {
+    color: white;
+    background-color: $primary-color;
+}

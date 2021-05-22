@@ -1,0 +1,156 @@
+@import "../../../assets/styles/project-style";
+
+@media only screen and (min-width: 961px) {
+  .content {
+    margin: 80px 40px 40px 40px;
+    border: $primary-color solid 2px;
+    border-radius: 40px 40px 40px 40px;
+  }
+
+  th {
+    color: white;
+    font-size: medium;
+    padding-right: 8px;
+  }
+
+  td {
+    background-color: #F3F6F9;
+    font-size: small;
+    padding-right: 8px;
+  }
+
+  mat-paginator {
+    font-size: medium;
+    border-radius: 0 0 40px 40px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .content {
+    margin: 80px 10px 10px 10px;
+    border: $primary-color solid 2px;
+    border-radius: 10px 10px 10px 10px;
+    min-height: 30vh;
+  }
+
+  th {
+    color: white;
+    font-size: small;
+    padding-right: 8px;
+  }
+
+  td {
+    background-color: #F3F6F9;
+    font-size: smaller;
+    padding-right: 8px;
+  }
+
+  mat-paginator {
+    font-size: small;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
+.content {
+  box-shadow: 0 1px 1px rgba(0,0,0,0.05),
+              0 2px 20px rgba(0,0,0,0.15),
+              0 4px 4px rgba(0,0,0,0.05),
+              0 8px 20px rgba(0,0,0,0.05),
+              0 16px 16px rgba(0,0,0,0.05);
+  height: 90vh;
+}
+
+.table-header {
+  margin: 8px 48px 8px 32px;
+
+  h1 {
+    margin-top: 8px;
+    font-size: x-large;
+    color: $primary-color;
+    font-weight: bolder;
+  }
+}
+
+table {
+  width: 100%;
+  overflow: auto;
+  background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+}
+
+.column-size-60 {
+  width: 60px;
+}
+
+mat-paginator {
+  width: 100%;
+  background: linear-gradient(to right, $primary-color 0%, $secondary-color 100%);
+  color: white;
+}
+
+.edit-button-style {
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  background-color: #F3F6F9;
+  border-radius: 8px;
+
+  mat-icon {
+    transform: scale(1.2);
+    color: $primary-color;
+  }
+}
+
+.title-action-button {
+  height: 50px;
+  width: 50px;
+  padding: 24px;
+  background: $secondary-color;
+  border-radius: 100%;
+  cursor: pointer;
+
+  mat-icon {
+    transform: scale(1.2);
+    color: $white-text;
+  }
+}
+
+.search-input-style {
+  border: #e8e8e8 solid 1px;
+  padding: 10px;
+  border-radius: 5px;
+  input {
+    font-size: medium;
+    font-weight: normal;
+  }
+  mat-icon {
+    color: darkgray;
+    font-size: x-large;
+  }
+}
+
+/* Scrollbar */
+
+::ng-deep ::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+::ng-deep ::-webkit-scrollbar-track {
+  background: #e8e8e8;
+}
+::ng-deep ::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+::ng-deep ::-webkit-scrollbar-thumb:hover {
+  background: $secondary-color;
+}
+
+/* CheckBox */
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-ripple .mat-ripple-element {
+  opacity: 0.03 !important;
+  background-color: $primary-color !important;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: $primary-color;
+}

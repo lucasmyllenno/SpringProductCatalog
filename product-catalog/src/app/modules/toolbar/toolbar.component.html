@@ -1,0 +1,9 @@
+<div class="toolbar" fxLayout="row" fxLayoutAlign="end center">
+	Olá,&nbsp;<strong>{{(user | async)?.name}}</strong>
+
+	<img *ngIf="(user | async)?.imageURL"
+		 src="{{(user | async)?.imageURL}}"
+		 alt="Usuário"/>
+
+	<mat-icon (click)="changeUser()">exit_to_app</mat-icon>
+</div>
